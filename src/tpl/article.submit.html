@@ -1,0 +1,33 @@
+<div class="wrapper-xl" ng-show="isLoading">
+    <div loading-spinner-directive width="45" height="45"></div>
+</div>
+<div class="wrapper-md bg-light h-min-vh" ng-show="!isLoading">
+    <div class="row">
+        <div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8">
+            <div class="md-list md-whiteframe-z0 bg-white m-t-top m-b text-left wrapper-md">
+                <h2 class="h2 text-2x font-bold m-b">New article</h2>
+                <form name="form" ng-submit="submit()" class="form-validation">
+                    <div class="form-group row">
+                        <div class="col-xs-12">
+                            <input class="form-control input-lg m-b"
+                                type="text"
+                                placeholder="Article title"
+                                ng-model="article.title"
+                                tabindex="1"
+                                required>
+                        </div>
+                        <div class="col-xs-12">
+                            <textarea rows="14" class="form-control code input-lg" name="content" ng-model="article.content" tabindex="2"></textarea>
+                        </div>
+                        <div class="col-sm-offset-2 col-md-offset-3 col-sm-8 col-md-6 m-t-xxl text-center">
+                            <button type="submit" class="btn btn-lg btn-primary btn-addon text-u-c" ng-disabled="app.isLoading || isSubmitting" tabindex="3">
+                                <span ng-hide="isSubmitting"><i class="icon-control-forward"></i>Submit</span>
+                                <span ng-show="isSubmitting"><i class="icon-control-forward"></i>Please wait...</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

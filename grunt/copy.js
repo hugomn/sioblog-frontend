@@ -24,6 +24,8 @@ module.exports = {
                     'angular-slugify/angular-slugify.js',
                     'angular-local-storage/dist/angular-local-storage.js',
                     'angular-media-queries/match-media.js',
+                    'angular-toastr/dist/angular-toastr.tpls.min.js',
+                    'angular-toastr/dist/angular-toastr.min.css',
                     'ngstorage/ngStorage.js',
                     'ngMeta/dist/ngMeta.min.js'
                 ],

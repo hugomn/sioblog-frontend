@@ -24,7 +24,13 @@ angular.module('app')
               'libs/angular/textAngular/dist/textAngular.css'
           ]
       },
-
+      {
+          name: 'toastr',
+          files: [
+              'libs/angular/angular-toastr/dist/angular-toastr.tpls.min.js',
+              'libs/angular/angular-toastr/dist/angular-toastr.min.css'
+          ]
+      },
       {
           name: 'slugifier',
           files: [
