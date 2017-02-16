@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="utf-8" />
+        <title ng-bind="ngMeta.title"></title>
+        <meta name="description" content="{{ ngMeta.description }}" />
+        <meta name="keywords" content="{{ ngMeta.keywords }}" />
+        <meta name="robots" content="{{ ngMeta.robots }}" />
+        <meta property="og:site_name" content="{{ ngMeta.site }}" />
+        <meta property="og:type" content="{{ ngMeta.type }}" />
+        <meta property="og:description" content="{{ ngMeta.description }}" />
+        <meta property="og:title" content="{{ ngMeta.title }}" />
+        <meta property="og:url" content="{{ ngMeta.url }}" />
+        <meta property="og:image" content="{{ ngMeta.image }}" />
+        <meta property="fb:app_id" content="216835645368065" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@sioblog" />
+        <meta name="twitter:title" content="{{ ngMeta.title }}" />
+        <meta name="twitter:description" content="{{ ngMeta.description }}" />
+        <meta name="twitter:image" content="{{ ngMeta.image }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="fragment" content="!">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" href="/css/app.min.css" type="text/css" />
+        <base href="/">
+    </head>
+    <body ng-controller="AppCtrl">
+        <div id="preloader" class="loading-spinner m-t-150">
+            <svg class="spinner" width="60px" height="60px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30"></circle>' +
+            </svg>
+        </div>
+        <div class="app" id="app" ng-class="{ 'app-aside-hidden': app.settings.asideHidden, 'app-aside-dock': app.settings.asideDock, 'app-aside-fixed': app.settings.asideFixed, 'app-aside-folded': app.settings.asideFolded, 'app-aside-opened': app.settings.asideOpened, 'app-header-fixed': app.settings.headerFixed, 'app-header-hidden': app.settings.headerHidden, 'app-header-transparent': app.settings.headerTransparent }" ui-view></div>
+        <script src="/js/app.min.js"></script>
+    </body>
+</html>

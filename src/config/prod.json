@@ -1,0 +1,13 @@
+{
+    "name": "production",
+    "api": {
+        "baseUrl": "https://api.sioblog.com",
+        "version": "/v1",
+        "clientId": "2_2e7h7e439rmsg0wk4sgo0kgo8o4088cscsso484k04swk0swoc",
+        "clientSecret": "5fwm23zxtns4ogc0gwgskgo804cgowg8oggkk8cs48cskows4s",
+        "mode": "live"
+    },
+    "auth": {
+        "storageKey": "sioblogUserData"
+    }
+}

@@ -1,0 +1,9 @@
+node_modules/*
+bower_components/*
+dist
+grunt/aws.json
+test/coverage
+src/css/app.css
+src/css/md.css
+.DS_Store
+/npm-debug.log

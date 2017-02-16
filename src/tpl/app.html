@@ -1,0 +1,15 @@
+<!-- navbar -->
+<div data-ng-include=" 'tpl/blocks/header.html' " class="app-header navbar">
+</div>
+<!-- / navbar -->
+
+<!-- butterbar -->
+<div butterbar-directive ng-class="{'active': app.isLoadingState || app.isLoading }"></div>
+<!-- / butterbar -->
+
+<!-- content -->
+<div class="app-content">
+    <a href class="off-screen-toggle hide" ui-toggle-class="off-screen" data-target=".app-aside"></a>
+    <div class="app-content-body" ui-view></div>
+</div>
+<!-- /content -->

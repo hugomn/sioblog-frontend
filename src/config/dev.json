@@ -1,0 +1,13 @@
+{
+    "name": "development",
+    "api": {
+        "baseUrl": "http://dev.api.sioblog.com/app_dev.php",
+        "version": "/v1",
+        "clientId": "1_2h9g8du9oq688sk08cockg4cwsoc8s0oogss4cgwg8wsgs8k8o",
+        "clientSecret": "j6y5xw9m0nc40co8gsgwscswggokkkwggk88og8wk448o48ok",
+        "mode": "sandbox"
+    },
+    "auth": {
+        "storageKey": "sioblogUserData"
+    }
+}

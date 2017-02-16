@@ -1,0 +1,44 @@
+@loading-offset: 187;
+@loading-duration: 1.5s;
+
+.loading-spinner {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+
+    .spinner {
+      animation: rotator @loading-duration linear infinite;
+    }
+
+    @keyframes rotator {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(270deg); }
+    }
+
+    .path {
+      stroke-dasharray: @loading-offset;
+      stroke-dashoffset: 0;
+      transform-origin: center;
+      animation:
+        dash @loading-duration ease-in-out infinite,
+        colors (@loading-duration*4) ease-in-out infinite;
+    }
+
+    @keyframes colors {
+    	0% { stroke: @brand-primary }
+      100% { stroke: @brand-primary }
+    }
+
+    @keyframes dash {
+     0% { stroke-dashoffset: @loading-offset; }
+     50% {
+       stroke-dashoffset: @loading-offset/4;
+       transform:rotate(135deg);
+     }
+     100% {
+       stroke-dashoffset: @loading-offset;
+       transform:rotate(450deg);
+     }
+    }
+
+}

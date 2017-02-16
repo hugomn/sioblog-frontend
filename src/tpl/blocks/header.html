@@ -1,0 +1,42 @@
+<div class="app-header-wrapper bg-white box-shadow"
+    ng-class="{'bg-transparent': app.settings.headerTransparent && !mobile}"
+    ng-controller="HeaderController">
+    <div class="navbar-header align-middle">
+        <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+            <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle-class="off-screen" data-target=".app-aside" ui-scroll-to="app" ng-show="auth.isAuthenticated">
+            <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+
+        <ul class="nav nav-border text-xs text-u-c navbar-nav">
+            <li>
+                <a ui-sref="app.index" class="navbar-brand text-lt no-border">
+                    <div class="logo">
+                        SIO Blog
+                    </div>
+                    <span class="hide m-l-xs">{{ app.name }}</span>
+                </a>
+            </li>
+            <li class="hidden-xs">
+                <a ui-sref="app.index">
+                    <span>Home</span>
+                </a>
+                <a ui-sref="app.article.submit">
+                    <span>New article</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="collapse navbar-collapse">
+
+        <ul class="nav nav-border navbar-nav navbar-right text-xs text-u-c">
+            <li class="visible-xs">
+                <a ui-sref="app.howitworks" class="pull-none-xs">
+                    <span>Home</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

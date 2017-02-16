@@ -1,0 +1,22 @@
+<section class="w-full bg-light">
+
+
+        <div class="container wrapper-xl">
+            <div class="row text-left" ng-repeat="article in articles">
+                <div class="col-xs-12 m-b-xl">
+                    <h1 class="font-bold text-1x text-lg-xs m-t-sm m-b-sm h1">{{ article.title }}</h1>
+                    <p class="text-lg m-t-md text-md-xs">{{ article.content }}</p>
+                    <p class="small">
+                        <a ui-sref="app.article.show({ id: article.id })" class="btn btn-primary">View more</a>
+                    </p>
+                </div>
+            </div>
+            <p class="text-center"><a ui-sref="app.howitworks" data-ride="scroll" class="btn btn-lg btn-primary btn-rounded bg-empty mt-xl m-sm text-u-c">
+                <span class="">New article</span>
+            </a></p>
+        </div>
+
+
+    <div data-ng-include="'tpl/blocks/footer.html'"> </div>
+
+</section>

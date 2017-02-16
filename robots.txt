@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /login
+Disallow: /cadastrar
+Disallow: /profiles/*
+Disallow: /configuracoes/*
+Disallow: /usuario/*
+Disallow: /evento/*
