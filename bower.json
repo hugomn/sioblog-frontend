@@ -34,6 +34,7 @@
     "angular-skycons": "~2.0.0",
     "angular-touch": "1.4.3",
     "angular-ui-router": "~0.2.11",
+    "angular-toastr": "^1.7.0",
     "angular-media-queries": "^0.6.0",
     "bootstrap": "~3.3.0",
     "bootstrap-filestyle": "~1.1.2",
