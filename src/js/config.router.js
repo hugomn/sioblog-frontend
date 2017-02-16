@@ -40,6 +40,15 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', 'JQ_CONFIG
                 url: '/article'
             })
 
+                .state('app.article.submit', {
+                    url: '/submit',
+                    controller: 'ArticleSubmitController',
+                    templateUrl: 'tpl/article.submit.html',
+                    data: { headerTransparent: false, headerFixed: false , isPublic: true},
+                    resolve: load([
+                        'js/controllers/ArticleSubmitController.js', 'toastr'])
+                })
+
                 // Should be the last route to avoid conflict
                 .state('app.article.show', {
                     url: '/:id',
