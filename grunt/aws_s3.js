@@ -8,7 +8,7 @@ module.exports = {
     },
     production: {
       options: {
-        bucket: 'www.sioblog.com',
+        bucket: 'sioblog.com',
         progress: 'progressBar'
       },
       files: [
